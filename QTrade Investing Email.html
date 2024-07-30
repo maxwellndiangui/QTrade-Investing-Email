@@ -9,6 +9,17 @@
         <title>QTrade Direct Investing</title>
 
         <style>
+            /* Outlook specific reset styles (extra fixes to make email render properly) */
+            body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+            table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+            img { -ms-interpolation-mode: bicubic; }
+
+            /* Fixes addresses turning into links for Apple Devices */
+            #id1 #id2 a[x-apple-data-detectors]{
+            color: inherit !important;
+            text-decoration: inherit !important;
+            }
+
             /* desktop */
             @media only screen and (min-width: 960px) {
                 .container{
