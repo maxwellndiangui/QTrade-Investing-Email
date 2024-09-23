@@ -20,50 +20,78 @@
             text-decoration: inherit !important;
             }
 
-            /* desktop */
-            @media only screen and (min-width: 600px) {
+            /* desktop (if smaller than 600px, then run code)*/
+            @media only screen and (max-width: 600px) {
                 .container{
-                    width: 480px !important;
+                    width: 500px !important;
                 }
             }
-            /* mobile */
-            @media only screen and (max-width: 480px) {
-                .container{
+            /* mobile  (if smaller than 500px, then run code)*/
+            @media only screen and (max-width: 500px) {
+                .container {
+                    width: 100% !important;
+                }                
+                .banner-img{
+                    width: 500px !important;
+                    padding: 0;
+                }
+                .issue-header {
                     width: 100% !important;
                 }
-                .banner-img{
+                .issue-row {
                     width: 100% !important;
                 }
                 .text-body-row{
-                    width: 100% !important;
+                    width: 500px !important;
+                    padding-right: 10px !important;
+                }
+                .computer-img {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+                .review-row-btn {
+                    padding-bottom: 10px !important;
                 }
                 .review-row{
                     width: 100% !important;
                 }
+                .computer-man-img {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
                 .assets-row{
                     width: 100% !important;
+                }
+                .documents-lady-img {
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+                .settlement-header {
+                    padding-top: 10px !important;
                 }
                 .settlement-row{
                     width: 100% !important;
                 }
                 .app-row{
                     width: 100% !important;
+                    padding-right: 10px !important;
                 }
-                .app-row-btn{
-                    width: 100% !important;
+                .logo-img {
+                    width: 200px !important;
                 }
                 .socials-logo-row{
                     width: 100% !important;
+                    margin-left: -30px !important;
                 }
                 .footer-row{
-                    width: 100% !important;
+                    width: 500px !important;
                 }
+                
             }
         </style>
-
     </head>
 
-    <body style="margin:0; padding:0; background-color:white;font-family:'HelveticaNeue', Helvetica, Arial, sans-serif !important;">
+    <body style="margin:0; padding:0; background-color:white;font-family:'HelveticaNeue', Helvetica, Arial, sans-serif !important; overflow-x:hidden;">
         <!--Start HTML Email-->
         <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f6f7f9">
             <tr>
@@ -73,7 +101,7 @@
                             <!--Start of QTrade Banner Row-->
                             <tr>
                                 <td>
-                                    <table class="banner" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff;" role="presentation">
+                                    <table class="banner" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff;" role="presentation">
                                         <tr>
                                             <td>
                                                 <img width="600" class="banner-img" style="width: 600px;" src="https://live.staticflickr.com/65535/53972367780_4f7da06566_z.jpg" alt="QTrade Investments Banner">
@@ -86,14 +114,14 @@
                             <!--Start of Issue Row-->
                             <tr>
                                 <td>
-                                    <table class="issue-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="issue-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
-                                            <td>
-                                                <h3 style="padding: 5px 20px 10px 20px !important;color:#2f5496;line-height:150%;">In this issue of Q to You</h3>
+                                            <td style="padding: 5px 20px 10px 20px;">
+                                                <h3 class="issue-header" style="color:#2f5496;line-height:150%;">In this issue of Q to You</h3>
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="bullet-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="bullet-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="font-size:14px;color:#262626;line-height:150%;padding:0px 25px 30px 35px !important;text-align:left">
                                                 <ul style="margin-top: -1px;">
@@ -111,7 +139,7 @@
                             <!--Start of Text Body Row-->
                             <tr>
                                 <td>
-                                    <table class="text-body-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="text-body-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="padding: 0px 20px 20px 20px !important;font-size:14px;line-height:150%">
                                                 <div style="margin-top:0;margin-bottom:10px">Hi READER,<br>
@@ -145,7 +173,7 @@
                             <!--Start of Rec Reads Row-->
                             <tr>
                                 <td>
-                                    <table class="rec-reads-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="rec-reads-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td>
                                                 <h3 style="padding: 5px 20px 10px 20px;color:#2f5496;line-height:150%;">This month’s recommended reads</h3>
@@ -158,10 +186,10 @@
                             <!--Start of Review Row-->
                             <tr>
                                 <td>
-                                    <table class="review-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="review-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="width: 35%;">
-                                                <img width="185" style="width: 185px; height: 191px;padding-bottom: 30px;" src="https://live.staticflickr.com/65535/53972252929_eff75d1f1d_w.jpg" alt="Computer Photo">
+                                                <img class="computer-img" width="185" style="width: 185px; height: 191px;padding-bottom: 30px;" src="https://live.staticflickr.com/65535/53972252929_eff75d1f1d_w.jpg" alt="Computer Photo">
                                             </td>
                                             <td style="text-align: left;">
                                                 <h4 class="review-header" style="padding: 0px 0px 0px 0px;color:#2f5496;line-height:150%;font-size:14px;margin-top:-20px">The latest Q Review</h4>
@@ -192,7 +220,7 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="review-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="review-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <hr class="review-row-line" style="margin-top:-2px" width="90%" color="#E0E0E0" size="1">
                                         </tr>
@@ -203,10 +231,10 @@
                             <!--Start of Assets Row-->
                             <tr>
                                 <td>
-                                    <table class="assets-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="assets-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="width: 35%;">
-                                                <img width="185" style="width: 185px; height: 191px;padding-bottom: 30px;padding-top:20px" src="https://live.staticflickr.com/65535/53972252934_c2bbb0e5d2_w.jpg" alt="Man Staring at Computer Photo">
+                                                <img class="computer-man-img" width="185" style="width: 185px; height: 191px;padding-bottom: 30px;padding-top:20px" src="https://live.staticflickr.com/65535/53972252934_c2bbb0e5d2_w.jpg" alt="Man Staring at Computer Photo">
                                             </td>
                                             <td style="text-align: left;">
                                                 <h4 class="assets-header" style="padding: 0px 0px 0px 0px;color:#2f5496;line-height:150%;font-size:14px;margin-top:-20px">All about asset classes</h4>
@@ -237,7 +265,7 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="assets-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="assets-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <hr class="assets-row-line" style="margin-top:-2px" width="90%" color="#E0E0E0" size="1">
                                         </tr>
@@ -248,10 +276,10 @@
                             <!--Start of Settlement Row-->
                             <tr>
                                 <td>
-                                    <table class="settlement-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="settlement-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td style="width: 35%;">
-                                                <img width="185" style="width: 185px; height: 191px;padding-bottom: 30px;padding-top:20px" src="https://live.staticflickr.com/65535/53971925856_3984412bcb_w.jpg" alt="Lady Staring at Documents Photo">
+                                                <img class="documents-lady-img" width="185" style="width: 185px; height: 191px;padding-bottom: 30px;padding-top:20px" src="https://live.staticflickr.com/65535/53971925856_3984412bcb_w.jpg" alt="Lady Staring at Documents Photo">
                                             </td>
                                             <td style="text-align: left;">
                                                 <h4 class="settlement-header" style="padding: 0px 0px 0px 0px;color:#2f5496;line-height:150%;font-size:14px;margin-top:-10px">Moving to a T+1 settlement cycle</h4>
@@ -288,22 +316,22 @@
                             <!--Start of App Row-->
                             <tr>
                                 <td>
-                                    <table class="app-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="app-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td>
-                                                <h3 style="text-align:center;color:#2f5496;line-height:150%;padding-top:20px">Sunsetting our old mobile app</h3>
+                                                <h3 class="app-header" style="text-align:center;color:#2f5496;line-height:150%;padding-top:20px">Sunsetting our old mobile app</h3>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="padding: 0px 0px 20px 20px">
-                                                <p style="font-size:14px;line-height:150%;padding:0px 0px 0px 0px;text-align:left;width:95%;margin-top:-5px">
+                                                <p class="app-text1" style="font-size:14px;line-height:150%;padding:0px 0px 0px 0px;text-align:left;width:95%;margin-top:-5px">
                                                     Earlier this year, we announced our new and improved mobile app. With an intuitive user experience, it allows you to take advantage of investment opportunities, keep current on the markets, and manage your portfolio, all from your device. 
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="padding: 0px 0px 0px 20px">
-                                                <p style="font-size:14px;line-height:150%;padding:0px 0px 0px 0px;text-align:left;width:95%;margin-top:-15px">
+                                                <p class="app-text2" style="font-size:14px;line-height:150%;padding:0px 0px 0px 0px;text-align:left;width:95%;margin-top:-15px">
                                                     As part of the launch of our new app, we will be sunsetting our old mobile app on June 30, 2024. After that date, you will no longer be able to access the old app. We encourage you to transition to the new app if you haven’t already. 
                                                 </p>
                                             </td>
@@ -336,21 +364,21 @@
                             <!--Start of Socials/Logo Row-->
                             <tr>
                                 <td>
-                                    <table class="socials-logo-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="socials-logo-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
-                                            <td style="padding: 70px 0px 0 50px">
+                                            <td class="socials-icons" style="padding: 70px 0px 0 50px">
                                                 <a href="#"><img width="20" class="fb" style="width: 20px;" src="https://live.staticflickr.com/65535/53972252959_90716472af_t.jpg" alt="Facebook Logo"></a>
                                                 <a href="#"><img width="20" class="ig" style="width: 20px; margin-left: 20px;" src="https://live.staticflickr.com/65535/53971925846_c99cd33e16_t.jpg" alt="Instagram Logo"></a>
                                                 <a href="#"><img width="20" class="x" style="width: 20px; margin-left: 20px;" src="https://live.staticflickr.com/65535/53972367760_34fa6d7ae2_t.jpg" alt="X/Twitter Logo"></a>
                                                 <a href="#"><img width="20" class="in" style="width: 20px; margin-left: 20px;" src="https://live.staticflickr.com/65535/53972163408_6ce4f97c9f_t.jpg" alt="LinkedIn Logo"></a>
                                                 <a href="#"><img width="20" class="yt" style="width: 20px; margin-left: 20px;" src="https://live.staticflickr.com/65535/53971925826_e4c144a96c_t.jpg" alt="YouTube Logo"></a>
                                             </td>
-                                            <td style="padding:30px 0 0 0" align="right">
+                                            <td class="logo-class" style="padding:30px 0 0 0" align="right">
                                                 <img class="logo-img" src="https://live.staticflickr.com/65535/53971043317_a6ff7653ab_m.jpg" alt="QTrade Investing Logo">
                                             </td>
                                         </tr>
                                     </table>
-                                    <table class="socials-logo-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="socials-logo-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <hr class="socials-logo-row-line" style="margin-top:40px" width="90%" color="black" size="1">
                                         </tr>
@@ -361,7 +389,7 @@
                             <!--Start of Footer Row-->
                             <tr>
                                 <td>
-                                    <table class="footer-row" width="600" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
+                                    <table class="footer-row" width="100%" align="center" cellspacing="0" cellpadding="0" border="0" style="background-color: white;" role="presentation">
                                         <tr>
                                             <td align="center">
                                                 <p style="font-size:11px;line-height:150%;padding:20px 0px 0px 0px;text-align:center;">
