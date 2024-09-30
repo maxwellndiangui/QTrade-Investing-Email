@@ -1,6 +1,6 @@
 # Introduction to QTrade Investing Email
 
- [![](https://github.com/maxwellndiangui/QTrade-Investing-Email/blob/main/img/QTrade-Email.png)](https://maxwellndiangui.github.io/QTrade-Investing-Email.github.io/)
+ [![](https://github.com/maxwellndiangui/QTrade-Investing-Email/blob/main/img/QT.png)](https://maxwellndiangui.github.io/QTrade-Investing-Email.github.io/)
 
 ## Description
 
